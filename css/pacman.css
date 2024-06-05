@@ -321,3 +321,56 @@ animation: eyeRight 0.7s linear infinite;
   }
 }
 
+
+
+
+
+.ghost2 {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  left: 80%;
+  height: 70px;
+  width: 60px;
+  background: blue;
+  margin-top: -35px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  animation: move 5s linear infinite, blinky 0.4s linear infinite; 
+  transform: scale(0.5); /* Reduces the size to 50% */
+}
+
+.ghost2::before, .ghost2::after {
+  position: absolute;
+  z-index: 99;
+  content: '';
+  top: 15px;
+  left: 4px;
+  height: 25px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+}
+
+.ghost2::after {
+  left: 28px;
+}
+
+.eyes2::before, .eyes2::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 10px;
+  background: black;
+  border-radius: 100%;
+  top: 25px;
+  left: 5px;
+  z-index: 99;
+  animation: eyeLeft 0.7s linear              infinite;
+}
+
+.eyes2::after {
+animation: eyeRight 0.7s linear infinite;
+  z-index: 100;
+  left: 30px;
+}
