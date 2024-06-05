@@ -7,6 +7,8 @@
     <link rel="icon" type="favicon/x-icon" href="img/ghost.png" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/pacman.css" />
+    <link rel="stylesheet" type="text/css" href="css/stack.css" />
+    <link rel="stylesheet" type="text/css" href="css/cards.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 </head>
 <body>
@@ -139,7 +141,7 @@
 
         <!-- Pacman -->
         <div class="pacman-position">
-            <div class="pacman">
+            <div class="pacman1">
                 <div class="pacman-top"></div>
                 <div class="pacman-bottom"></div>
                 <div class="feed"></div>
@@ -562,6 +564,230 @@
 <br><br>
 <div class="wrap h-[1px] bg-grey-300"></div>
 <br><br>
+<!--termina STACK-->
+
+<!--Inician GHOST -->
+
+<section id="ghost" class="wrap">
+    <div class="ghost-container">
+        <div class="ghost-grid">
+            <div class="ghost-scene">
+                <div class="path">
+                    <div class="pacman"></div>
+                    <div class="ghost">
+                    <div class="eyes"></div>
+                    <div class="skirt"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--termina GHOST-->
+<br><br>
+<!-- inician Cards -->
+<section id="cards" class="wrap">
+    <div class="cards-container">
+
+        <div class="card-learn-code">
+            <div class="canvas-wrapper">
+                <a href="pages/learn-code.html" class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <svg viewBox="0 -54 512 512" xmlns="http://www.w3.org/2000/svg" width="7em" border="1px solid green">
+                            <path d="m446.566406 403.292969h-381.132812c-36.136719 0-65.433594-29.296875-65.433594-65.433594v-272.425781c0-36.136719 29.296875-65.433594 65.433594-65.433594h381.128906c36.140625 0 65.4375 29.296875 65.4375 65.433594v272.425781c0 36.136719-29.296875 65.433594-65.433594 65.433594zm0 0" fill="#767678"/><path d="m0 65.433594v272.425781c0 36.136719 29.296875 65.433594 65.433594 65.433594h85.65625c-22.34375-26.171875-23.800782-67.257813-23.800782-67.257813s-.179687-42.121094-.277343-85.660156c-.109375-50 21.085937-97.769531 58.496093-130.941406 57.25-50.757813 70.492188-119.433594 70.492188-119.433594h-190.566406c-36.136719 0-65.433594 29.296875-65.433594 65.433594zm0 0" fill="#575757"/><path d="m446.566406 0h-381.132812c-36.136719 0-65.433594 29.296875-65.433594 65.433594v22.488281h512v-22.488281c0-36.136719-29.296875-65.433594-65.433594-65.433594zm0 0" fill="#a4e7ff"/><path d="m0 65.433594v22.488281h214.523438c32.949218-43.703125 41.476562-87.921875 41.476562-87.921875h-190.566406c-36.136719 0-65.433594 29.296875-65.433594 65.433594zm0 0" fill="#5ad6ff"/><path d="m86.003906 43.960938c0 8.515624-6.90625 15.417968-15.421875 15.417968-8.511719 0-15.417969-6.902344-15.417969-15.417968 0-8.515626 6.90625-15.417969 15.417969-15.417969 8.515625 0 15.421875 6.902343 15.421875 15.417969zm0 0" fill="#ff8a98"/><path d="m142.707031 43.960938c0 8.515624-6.902343 15.417968-15.417969 15.417968-8.515624 0-15.417968-6.902344-15.417968-15.417968 0-8.515626 6.902344-15.417969 15.417968-15.417969 8.515626 0 15.417969 6.902343 15.417969 15.417969zm0 0" fill="#eedb00"/><path d="m199.414062 43.960938c0 8.515624-6.90625 15.417968-15.421874 15.417968-8.515626 0-15.417969-6.902344-15.417969-15.417968 0-8.515626 6.902343-15.417969 15.417969-15.417969 8.515624 0 15.421874 6.902343 15.421874 15.417969zm0 0" fill="#00c140"/><path d="m174.722656 305.234375-61.246094-47.46875c-3.777343-2.925781-5.988281-7.4375-5.988281-12.214844 0-4.777343 2.210938-9.285156 5.988281-12.210937l61.246094-47.46875c6.746094-5.230469 16.453125-4 21.679688 2.746094 5.230468 6.746093 4 16.453124-2.746094 21.679687l-45.488281 35.253906 45.488281 35.253907c6.746094 5.230468 7.976562 14.9375 2.746094 21.679687-3.042969 3.929687-11.179688 9.921875-21.679688 2.75zm0 0" fill="#73da8c"/><path d="m337.277344 305.234375 61.246094-47.46875c3.777343-2.925781 5.988281-7.4375 5.988281-12.214844 0-4.777343-2.210938-9.285156-5.988281-12.210937l-61.246094-47.46875c-6.746094-5.230469-16.453125-4-21.679688 2.746094-5.230468 6.746093-4 16.453124 2.746094 21.679687l45.488281 35.253906-45.488281 35.253907c-6.742188 5.230468-7.976562 14.9375-2.746094 21.679687 3.042969 3.929687 11.179688 9.921875 21.679688 2.75zm0 0" fill="#73da8c"/><path d="m237.191406 332.316406c-8.34375-1.804687-13.636718-10.035156-11.828125-18.375l31.070313-143.347656c1.808594-8.34375 10.035156-13.636719 18.375-11.832031 8.339844 1.808593 13.636718 10.035156 11.828125 18.375l-31.070313 143.351562c-3.683594 15.511719-17.273437 12.066407-18.375 11.828125zm0 0" fill="#00c140"/>
+                        </svg>
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle"> &lt; / &gt; </span>
+                        <strong class="canvas_copy_title">learn</strong>
+                        <strong class="canvas_copy_title">to</strong>
+                        <strong class="canvas_copy_title">code</strong>
+                        <span class="canvas_copy_details">Java / Node / Python</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-spring">
+            <div class="canvas-wrapper">
+                <a href="#" class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="7em" height="7em" viewBox="0 0 48 48"> 
+                            <path fill="#8bc34a" d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z"></path><path fill="#fff" d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z"></path> 
+                        </svg>
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Java</span>
+                        <strong class="canvas_copy_title">Spring</strong>
+                        <strong class="canvas_copy_title">Boot</strong>
+                        <span class="canvas_copy_details">Maven</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-data-science">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="7em" height="7em" viewBox="0 0 48 48">
+                            <path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+                        </svg>
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Python</span>
+                        <strong class="canvas_copy_title">Data</strong>
+                        <strong class="canvas_copy_title">Science</strong>
+                        <span class="canvas_copy_details">pandas / Tensorflow </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-e-commerce">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3051/3051772.png" loading="lazy" alt="Ecommerce " title="Ecommerce " width="100em" height="100em">
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Node</span>
+                        <strong class="canvas_copy_title">E</strong>
+                        <strong class="canvas_copy_title">Commerce</strong>
+                        <span class="canvas_copy_details">GraphQL</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-threejs">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <svg fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(8.964 4.2527)" fill-rule="evenodd" stroke="#000" stroke-linecap="butt" stroke-linejoin="round" stroke-width="4">
+                             <path d="m63.02 200.61-43.213-174.94 173.23 49.874z"/>
+                             <path d="m106.39 50.612 21.591 87.496-86.567-24.945z"/>
+                             <path d="m84.91 125.03-10.724-43.465 43.008 12.346z"/>
+                             <path d="m63.458 38.153 10.724 43.465-43.008-12.346z"/>
+                             <path d="m149.47 62.93 10.724 43.465-43.008-12.346z"/>
+                             <path d="m84.915 125.06 10.724 43.465-43.008-12.346z"/>
+                            </g>
+                           </svg>
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">React</span>
+                        <strong class="canvas_copy_title">ThreeJS</strong>
+                        <strong class="canvas_copy_title"></strong>
+                        <span class="canvas_copy_details">JavaScript</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-video-games">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2780/2780137.png" loading="lazy" alt="Game console " title="Game console " width="100em" height="100em">
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Blender</span>
+                        <strong class="canvas_copy_title">Unity</strong>
+                        <strong class="canvas_copy_title">Unreal</strong>
+                        <span class="canvas_copy_details">Video-games</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-data-bases">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2906/2906274.png" loading="lazy" alt="Database storage " title="Database storage " width="100em" height="100em">
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Heading</span>
+                        <strong class="canvas_copy_title">Hello</strong>
+                        <strong class="canvas_copy_title">World</strong>
+                        <span class="canvas_copy_details">Details and stuff</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card-security">
+            <div class="canvas-wrapper">
+                <a class="canvas">
+                    <div class="canvas_border">
+                        <svg>
+                            <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
+                            <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+                        </svg>
+                    </div>
+                    <div class="canvas_img-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9305/9305711.png" loading="lazy" alt="Hack " title="Hack " width="50%" height="50%">
+                    </div>
+                    <div class="canvas_copy canvas_copy--left">
+                        <span class="canvas_copy_subtitle">Security</span>
+                        <strong class="canvas_copy_title">Kali</strong>
+                        <strong class="canvas_copy_title">Linux</strong>
+                        <span class="canvas_copy_details">Hacker / pentesting</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- Terminan Cards -->
+<br><br><br><br><br>
+<div class="wrap h-[1px] bg-grey-300"></div>
+<br><br><br>
 <!--Inicio PIE DE PÁGINA-->
 <div class="clearfix"></div>
 <footer id="footer">
@@ -625,3 +851,10 @@
 <!-- Finaliza seccion stack -->
     </body>
 </html>
+
+
+
+
+
+
+
