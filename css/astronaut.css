@@ -434,8 +434,3 @@
     top:60px;
     left:370px;
   }
-  .flex-astro{
-    display: flex;
-    align-self: start;
-    padding-bottom: 2000px;
-  }

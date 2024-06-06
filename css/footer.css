@@ -1,0 +1,161 @@
+/*
+.footer {
+  position: relative;
+  width: 100%;
+  background: black;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}*/
+
+
+
+/*FOOTER*/
+#footer{
+    width: 100%;
+    height: 470px;
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float:left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "Pixelletters-RLm3";
+}
+
+#footer a{
+    text-decoration: none;
+    color: #37bcf9;
+    transition:all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: url('../img/pxgray.png'), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+   padding-left: 40px;
+   color: white;
+   width: 100%;
+}
+
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #browsers img{
+    width: 45px;
+}

@@ -7,12 +7,27 @@
     <link rel="icon" type="favicon/x-icon" href="img/ghost.png" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/pacman.css" />
+    <link rel="stylesheet" type="text/css" href="css/hero.css"/>
     <link rel="stylesheet" type="text/css" href="css/stack.css" />
     <link rel="stylesheet" type="text/css" href="css/cards.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/astronaut.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
+
+    <audio id="myAudio">
+        <source src="audio/559085__nox_sound__ambiance_glitchy_computer_loop_mono.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
      <!--Inicio de Cabecera-->
     <header id="header">
         <div class="wrap wrap-content">
@@ -47,6 +62,44 @@
     </section>
     <!-- Fin Banner -->
 
+    <!-- inicia contacto-->
+<section id="contact" class="wrap">
+    <div class="contact-scene">
+        <div class="container">
+            <h1 id="loadingH1"><span><i class="fa fa-cogs"></i></span> RUNNING IDENTITY PROTOCOL<span id="loading">.</span></h1>
+                <div class="img-container">
+                    <div id="identity-results">
+                        <h1 id="greeting"></h1>
+                        <p id="message"></p>
+                    </div>
+                    <h3 id="loadingMessage2">LOADING RESUME<span id="alpha-loading"></span>.</h3>
+                </div>
+                <div id="resume">
+                    <h3 id="name"></h3>
+                    <h3 id="alias"></h3> 
+                    <h3 id="occupation"></h3>
+                    <br>
+                    <i id="front-end-span"></i><h1 id="front-end" class="inline"></h1>
+                        <h4 id="js-frameworks" class="sub-item"></h4>
+                        <h4 id="js-libs" class="sub-item"></h4>
+                        <h4 id="css-frameworks" class="sub-item"></h4>
+                        <h4 id="css-pre" class="sub-item"></h4>
+                        <h4 id="front-end-animation" class="sub-item"></h4>
+                    <br>
+                    <i id="cms-span"></i><h1 id="CMS-development" class="inline"></h1>
+                        <h4 id="wordpress" class="sub-item"></h4>
+                    <br>
+                    <i id="design-span"></i><h1 id="design" class="inline"></h1>
+                        <h4 id="web-design" class="sub-item"></h4>
+                        <h4 id="branding" class="sub-item"></h4>
+                        <h4 id="design-animation" class="sub-item"></h4>
+                </div>
+            </div>
+    </div>
+</section>
+<!-- termina contacto -->
+<br><br><br><br><br>
+<div class="wrap h-[1px] bg-grey-300"></div>
     <!-- INICIO HEROE -->
      <section class="wrap wrap-content" id="hero">
         <div class="hero-container">
@@ -838,81 +891,75 @@
                 </a>
             </div>
         </div>
-        
     </div>
 </section>
 <!-- Terminan Cards -->
 <br><br><br><br><br>
-<div class="wrap h-[1px] bg-grey-300"></div>
-<br><br><br>
-<!-- inicia contacto-->
-<section id="contact" class="wrap">
-    <div class="contact-container">
 
-    </div>
-</section>
-<!-- termina contacto -->
-<!--Inicio PIE DE PÁGINA-->
-<div class="clearfix"></div>
-<footer id="footer">
-    <div class="wrap">
 
-        <div id="menu_footer">
-            <h5>MENÚ</h5>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">FORMACIÓN</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
+    <!--Inicio PIE DE PÁGINA-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <div class="wrap">
+
+            <div id="menu_footer">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">FORMACIÓN</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+
+            <div id="location">
+                <h5>¿DONDE ESTAMOS?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4855961568032!2d-99.1655408!3d19.3047237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce004244d437d1%3A0x94d7c1bcea64acc3!2sGran%20Sur!5e0!3m2!1sen!2smx!4v1716568471070!5m2!1sen!2smx" 
+                    width="600" height="450" style="border:0;" 
+                    allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            
+            <div id="info">
+                <h5>Desarrollado con</h5>
+                <p>
+                    <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+                        alt="Creado HTML y CSS" />
+                </p>
+
+                <h5>Optimizado para</h5>
+                <p id="browsers">
+                    <a href="#">
+                        <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
+                    </a>
+                    <a href="#">
+                        <img src="img/chrome.png" alt="Chrome" title="Chrome" />
+                    </a>
+                    <a href="#">
+                        <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
+                    </a>
+                    <a href="#">
+                        <img src="img/safari.png" alt="Safari" title="Safari" />
+                    </a>
+                    <a href="#">
+                        <img src="img/android.png" alt="android" title="android" />
+                    </a>
+                    <a href="#">
+                        <img src="img/ios.png" alt="Apple" title="Apple" />
+                    </a>
+                </p>
+
+                <h5>AUTOR</h5>
+                <p>&copy; Roman Vargas</p>
+            </div>
         </div>
+    </footer>
+    <!--Fin PIE DE PÁGINA-->
 
-        <div id="location">
-            <h5>¿DONDE ESTAMOS?</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4855961568032!2d-99.1655408!3d19.3047237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce004244d437d1%3A0x94d7c1bcea64acc3!2sGran%20Sur!5e0!3m2!1sen!2smx!4v1716568471070!5m2!1sen!2smx" 
-                width="600" height="450" style="border:0;" 
-                allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
 
-        
-        <div id="info">
-            <h5>Desarrollado con</h5>
-            <p>
-                <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
-                    alt="Creado HTML y CSS" />
-            </p>
 
-            <h5>Optimizado para</h5>
-            <p id="browsers">
-                <a href="#">
-                    <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
-                </a>
-                <a href="#">
-                    <img src="img/chrome.png" alt="Chrome" title="Chrome" />
-                </a>
-                <a href="#">
-                    <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
-                </a>
-                <a href="#">
-                    <img src="img/safari.png" alt="Safari" title="Safari" />
-                </a>
-                <a href="#">
-                    <img src="img/android.png" alt="android" title="android" />
-                </a>
-                <a href="#">
-                    <img src="img/ios.png" alt="Apple" title="Apple" />
-                </a>
-            </p>
-
-            <h5>AUTOR</h5>
-            <p>&copy; Roman Vargas</p>
-        </div>
-    </div>
-</footer>
-<!--Fin PIE DE PÁGINA-->
-<!-- Finaliza seccion stack -->
     </body>
 </html>
 
