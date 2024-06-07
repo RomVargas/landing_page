@@ -14,7 +14,7 @@
 h1{
    font-family: "Pixelletters-RLm3";
    animation: pulse .9s infinite;
-   color: black;
+   color: white;
 }
 
 #identity-results, #resume, #loading-alpha-div, #loadingH1, #loadingMessage2, #message{
