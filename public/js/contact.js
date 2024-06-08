@@ -192,6 +192,7 @@ var $loadingMessage = $('#loadingH1');
                         }, 100);
                   }
             }
+            console.log('public');
             function initWordpress(i){
                $('#wordpress').addClass("sign cursor").text($wordpress.substring(0, i));
                   if(i < $wordpress.length){
