@@ -15,7 +15,11 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="public/js/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+    
 </head>
 <body>
 
@@ -90,9 +94,10 @@
                     <h5 id="databases" class="sub-item"></h5>
                     <br>
                     <i id="devops-span"></i><h1 id="devops" class="inline"></h1>
-                        <h4 id="web-design" class="sub-item"></h4>
-                        <h4 id="branding" class="sub-item"></h4>
-                        <h4 id="design-animation" class="sub-item"></h4>
+                        <h5 id="automation" class="sub-item"></h5>
+                        <h5 id="cloud" class="sub-item"></h5>
+                        <h5 id="iac" class="sub-item"></h5>
+                        <h5 id="containers" class="sub-item"></h5>
                 </div>
             </div>
     </div>
@@ -898,6 +903,7 @@
 
 
     <!--Inicio PIE DE PÁGINA-->
+    <div id="waterdrop"></div>
     <div class="clearfix"></div>
     <footer id="footer">
         <div class="wrap">
@@ -928,38 +934,13 @@
                     <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
                         alt="Creado HTML y CSS" />
                 </p>
-
-                <h5>Optimizado para</h5>
-                <p id="browsers">
-                    <a href="#">
-                        <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
-                    </a>
-                    <a href="#">
-                        <img src="img/chrome.png" alt="Chrome" title="Chrome" />
-                    </a>
-                    <a href="#">
-                        <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
-                    </a>
-                    <a href="#">
-                        <img src="img/safari.png" alt="Safari" title="Safari" />
-                    </a>
-                    <a href="#">
-                        <img src="img/android.png" alt="android" title="android" />
-                    </a>
-                    <a href="#">
-                        <img src="img/ios.png" alt="Apple" title="Apple" />
-                    </a>
-                </p>
-
                 <h5>AUTOR</h5>
                 <p>&copy; Roman Vargas</p>
             </div>
         </div>
     </footer>
     <!--Fin PIE DE PÁGINA-->
-
-
-    
+    <script> jQuery('#waterdrop').raindrops({color:'black', canvasHeight:150, density: 0.001, frequency: 30});</script>
     </body>
 </html>
 

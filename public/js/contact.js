@@ -23,12 +23,17 @@ var $loadingMessage = $('#loadingH1');
          var $CSSFrameworks = "CSS FRAMEWORKS: BOOTSTRAP | TAILWIND";
          var $CSSPre = "CSS PREPROCESSORS: SASS | LESS ";
          var $frontEndAnimation = "FRONT END ANIMATION: CANVAS | HTML5 | SVG | THREEjs";
-       var $cmsDevelopment = "WORDPRESS DEVELOPMENT: WORDPRESS";
-         var $wordpress = "WORDPRESS: CUSTOM THEMING | PLUGINS";
-       var $design = "DESIGN CORE: ADOBE SUITE";
-         var $webDesign = "WEB DESIGN: INDESIGN CC | MUSE CC";
-         var $branding = "ILLUSTRATIONS & BRANDING: ILLUSTRATOR CC | PHOTOSHOP CC";
-         var $designAnimation = "ANIMATION DESIGN: AFTER EFFECTS CC | FLASH CC";
+       var $backEnd = "BACK-END DEVELOPMENT CORE: JAVA | PYTHON | NODEjs";
+         var $java = "JAVA FRAMEWORKS: SPRING BOOT | SPRING WEB | SPRING DATA | SPRING SECURITY -- CREAZY!!";
+         var $python= "PYTHON FRAMEWORKS: FLASK | DJANGO | SQLALCHEMY";
+         var $node = "NODEjs FRAMEWORK: EXPRESS | GRAPHQL";
+         var $databases = "DATABASES: MySQL | POSTGRESQL | ORACLE | MONGODB | DYNAMODB";
+       var $devOps = "DEVOPS TOOLS: DOCKER | KUBERNETES | AWS";
+         var $automation = "AUTOMATION TOOLS: JENKINS | GITHUB-ACTIONS";
+         var $containers = "CONTAINERS: DOCKER | KUBERNETES | EKS";
+         var $cloud = "CLOUD PROVIDER: AWS | GCP";
+         var $iac = "INFRASTRUCTURE AS CODE: TERRAFORM";
+       
          
       function initIdentityResults(i){
          audio.play();
@@ -100,7 +105,7 @@ var $loadingMessage = $('#loadingH1');
                      }
             }
             function initFrontEnd(i){
-               $('#front-end-span').addClass('fa fa-wrench');
+               $('#front-end-span').addClass('sign cursor');
                $('#front-end').addClass("cursor").text($frontEnd.substring(0, i));
                   if(i < $frontEnd.length){
                      setTimeout(function(){
@@ -174,86 +179,137 @@ var $loadingMessage = $('#loadingH1');
                   }else{
                      $('#front-end-animation').removeClass("cursor");
                      setTimeout(function() {
-                           initCMSDevelopment(0);
+                           initBackend(0);
                         }, 100);
                   }
             }
-            function initCMSDevelopment(i){
-               $('#cms-span').addClass("fa fa-wordpress")
-               $('#CMS-development').addClass("cursor").text($cmsDevelopment.substring(0, i));
-                  if(i < $cmsDevelopment.length){
+            function initBackend(i){
+               $('#back-span').addClass("sign cursor")
+               $('#back-development').addClass("cursor").text($backEnd.substring(0, i));
+                  if(i < $backEnd.length){
                      setTimeout(function(){
-                         initCMSDevelopment(i + 1);  
+                         initBackend(i + 1);  
                      }, 6);
                   }else{
-                     $('#CMS-development').removeClass("cursor");
+                     $('#back-development').removeClass("cursor");
                      setTimeout(function() {
-                           initWordpress(0);
+                           initJava(0);
                         }, 100);
                   }
             }
-            console.log('public');
-            function initWordpress(i){
-               $('#wordpress').addClass("sign cursor").text($wordpress.substring(0, i));
-                  if(i < $wordpress.length){
-                     setTimeout(function(){
-                         initWordpress(i + 1);  
-                     }, 6);
-                  }else{
-                     $('#wordpress').removeClass("cursor");
+            function initJava(i){
+               $('#java').addClass('sign cursor').text($java.substring(0, i));
+                  if(i < $java.length){
                      setTimeout(function() {
-                           initDesign(0);
+                        initJava(i + 1);
+                     }, 6);
+                  } else {
+                     $('#java').removeClass("cursor");
+                     setTimeout(function() {
+                           initPython(0);
                         }, 100);
                   }
             }
-             function initDesign(i){
-               $('#design-span').addClass('fa fa-paint-brush');
-               $('#design').addClass("cursor").text($design.substring(0, i));
-                  if(i < $design.length){
-                     setTimeout(function(){
-                         initDesign(i + 1);  
-                     }, 6);
-                  }else{
-                     $('#design').removeClass("cursor");
+            function initPython(i){
+               $('#python').addClass('sign cursor').text($python.substring(0, i));
+                  if(i < $python.length){
                      setTimeout(function() {
-                           initWebDesign(0);
-                        }, 180);
-                  }
-            }
-            function initWebDesign(i){
-               $('#web-design').addClass("sign cursor").text($webDesign.substring(0, i));
-                  if(i < $webDesign.length){
-                     setTimeout(function(){
-                         initWebDesign(i + 1);  
+                        initPython(i + 1);
                      }, 6);
-                  }else{
-                     $('#web-design').removeClass("cursor");
+                  } else {
+                     $('#python').removeClass("cursor");
                      setTimeout(function() {
-                           initBranding(0);
+                           initNode(0);
                         }, 100);
                   }
             }
-            function initBranding(i){
-               $('#branding').addClass("sign cursor").text($branding.substring(0, i));
-                  if(i < $branding.length){
-                     setTimeout(function(){
-                         initBranding(i + 1);  
-                     }, 8);
-                  }else{
-                     $('#branding').removeClass("cursor");
+            function initNode(i){
+               $('#node').addClass('sign cursor').text($node.substring(0, i));
+                  if(i < $node.length){
                      setTimeout(function() {
-                           initDesignAnimation(0);
+                        initNode(i + 1);
+                     }, 6);
+                  } else {
+                     $('#node').removeClass("cursor");
+                     setTimeout(function() {
+                           initDatabases(0);
                         }, 100);
                   }
             }
-            function initDesignAnimation(i){
-               $('#design-animation').addClass("sign cursor").text($designAnimation.substring(0, i));
-                  if(i < $designAnimation.length){
+            function initDatabases(i){
+               $('#databases').addClass('sign cursor').text($databases.substring(0, i));
+                  if(i < $databases.length){
+                     setTimeout(function() {
+                        initDatabases(i + 1);
+                     }, 6);
+                  } else {
+                     $('#databases').removeClass("cursor");
+                     setTimeout(function() {
+                           initDevops(0);
+                        }, 100);
+                  }
+            }
+             function initDevops(i){
+               $('#devops-span').addClass('sign cursor');
+               $('#devops').addClass("cursor").text($devOps.substring(0, i));
+                  if(i < $devOps.length){
                      setTimeout(function(){
-                         initDesignAnimation(i + 1);  
+                         initDevops(i + 1);  
                      }, 6);
                   }else{
-                     $('#design-animation').removeClass("cursor");
+                     $('#devops').removeClass("cursor");
+                     setTimeout(function() {
+                        initAutomation(0);
+                        }, 100);
+                  }
+            }
+             function initAutomation(i){
+               $('#automation').addClass('sign cursor').text($automation.substring(0 , i));
+               if(i < $automation.length) {
+                  setTimeout(function(){
+                  initAutomation(i + 1);
+                  }, 6);
+               } else {
+                  $('#automation').removeClass('cursor');
+                  setTimeout(function(){
+                     initCloud(0);
+                  },100);
+               }
+             }
+             function initCloud(i){
+               $('#cloud').addClass('sign cursor').text($cloud.substring(0,i));
+               if(i < $cloud.length) {
+                  setTimeout(function(){
+                     initCloud(i + 1);
+                  },6);
+               } else {
+                  $('#cloud').removeClass('cursor');
+                  setTimeout(function(){
+                     initIac(0);
+                  },100);
+               }
+             }
+             function initIac(i){
+               $('#iac').addClass('sign cursor').text($iac.substring(0,i));
+               if(i < $iac.length) {
+                  setTimeout(function(){
+                     initIac(i + 1);
+                  },6);
+               }else {
+                  $('#iac').removeClass('cursor');
+                  setTimeout(function(){
+                     initContainers(0);
+                  },100)
+               }
+             }
+            function initContainers(i){
+               $('#containers').addClass("sign cursor").text($containers.substring(0, i));
+                  if(i < $containers.length){
+                     setTimeout(function(){
+                         initContainers(i + 1);  
+                     }, 6);
+                  }else{
+                     $('#containers').removeClass("cursor");
                   }
             }
          }
@@ -272,5 +328,3 @@ var $loadingMessage = $('#loadingH1');
          initProgramAlpha(0)
    
    }, 100);
-
-
