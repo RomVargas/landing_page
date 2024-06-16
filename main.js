@@ -1,1 +1,1 @@
-import './js/contact';
+import './public/js/resume'

@@ -328,5 +328,3 @@ var $loadingMessage = $('#loadingH1');
          initProgramAlpha(0)
    
    }, 100);
-
-   

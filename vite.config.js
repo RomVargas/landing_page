@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path'
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
         main: 'index.html', // o el punto de entrada principal de tu aplicación
-        // Si tienes múltiples puntos de entrada, añádelos aquí
+        coming_soon: resolve(__dirname, 'src/pages/coming-soon.html'),
       },
       output: {
         // Opcionalmente, puedes ajustar la salida para organizar mejor los archivos
@@ -14,6 +15,6 @@ export default defineConfig({
         chunkFileNames: 'chunks/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
       },
-    },
+    }
   },
 });
