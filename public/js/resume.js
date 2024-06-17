@@ -1,8 +1,31 @@
-var audio = function() {
+
+    const audioUrl = '../audio/loop_mono.wav'; 
+    const audio = new Audio(audioUrl);
+
+    audio.addEventListener('canplaythrough', function() {
+        // El audio está cargado y puede reproducirse
+        audio.play().then(() => {
+            console.log('Reproduciendo audio');
+        }).catch(error => {
+            console.error('Error al reproducir el audio:', error);
+        });
+    });
+
+    audio.addEventListener('error', function(e) {
+        console.error('Error al cargar el audio:', e);
+    });
+
+    // Intentar cargar el audio
+    audio.load();
+
+
+/*var audio = function() {
    audio = document.getElementById("myAudio");
 };
 window.onload = audio;
 
+
+/* Hero */
 var $loadingMessage = $('#loadingH1');
     
    setTimeout(function() {
