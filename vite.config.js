@@ -12,7 +12,7 @@ export default defineConfig({
         threejs: resolve(__dirname, 'src/pages/threejs.html'),
         video_games: resolve(__dirname, 'src/pages/video-games.html'),
         python: resolve(__dirname, 'src/pages/python.html'),
-        devops: resolve(__dirname, 'src/pages/devops-html'),
+        devops: resolve(__dirname, 'src/pages/devops.html'),
       },
       output: {
         // Opcionalmente, puedes ajustar la salida para organizar mejor los archivos

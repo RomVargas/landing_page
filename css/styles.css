@@ -62,13 +62,12 @@ table {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 15px;
     align-items: center;
 }
 
 .font-stack-title {
-    display: flex;
     font-family: "Pixelletters-RLm3";
     padding-top: 25px;
     text-transform: uppercase;
@@ -83,7 +82,6 @@ table {
 }
 
 .font-stack-tech  {
-    display: flex;
     font-family: "Pixelletters-RLm3";
     padding-top: 25px;
     text-transform: uppercase;
@@ -95,6 +93,22 @@ table {
     padding-top: 19px;
     align-items: center;
     gap: 5px;
+}
+
+.font-stocky {
+    font-family: "stocky";
+    padding-left: 25px;
+    --tw-text-opacity: 1;
+    color: rgb(0 190 0 / var(--tw-text-opacity));
+    font-size: 40px;
+}
+
+.font-04B {
+    font-family: "04B";
+    padding-left: 25px;
+    --tw-text-opacity: 1;
+    color: rgb(0 190 0 / var(--tw-text-opacity));
+    font-size: 40px;
 }
 
 
@@ -332,6 +346,21 @@ html:svg{
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "04B";
+    src: url('fonts/04B_03__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "stocky";
+    src: url('fonts/stocky.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face{
     font-family: "WebSymbolsRegular";
