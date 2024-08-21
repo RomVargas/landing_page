@@ -68,6 +68,7 @@ table {
 }
 
 .font-stack-title {
+    display: flex;
     font-family: "Pixelletters-RLm3";
     padding-top: 25px;
     text-transform: uppercase;

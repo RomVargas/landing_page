@@ -16,15 +16,15 @@
 
 .title p{
   font-size: 45px;
-  text-shadow: -20px -15px 9px rgba(32, 246, 4, 0.7);
+  text-shadow: -20px -15px 7px rgba(16, 16, 16, 0.7);
 }
 
 .blog-nav {
     display: flex;
-    justify-content: flex-end;
-    padding-left: 30px;
+    justify-content: center;
+    padding-left: 10px;
     grid-column: 1;
-    grid-row: 2
+    grid-row: 2;
 }
 
 main {
@@ -49,14 +49,13 @@ main {
 }
 .sidebar ul a{
   display: block;
-  height: 100%;
   width: 100%;
-  line-height: 65px;
-  font-size: 20px;
+  line-height: 75px;
+  font-size: 22px;
   color: white;
   padding-left: 40px;
   box-sizing: border-box;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(70, 234, 10);
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
 }
@@ -69,9 +68,9 @@ ul li:hover a{
 
 .stack-cards {
   display: flex;
-  justify-items: center;
-  gap: 100px;
-  transform: translateX(-100px);
+  justify-content: end;
+  gap: 120px;
+  
 }
 
 .title {
@@ -79,4 +78,78 @@ ul li:hover a{
   justify-content: center;
   font-size: 70px;
   text-shadow: -6px -3px 7px rgba(255, 0, 0, 0.7);
+}
+
+.console {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.console-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.console-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.console-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.console-button.close {
+    background-color: #ff5f56;
+}
+
+.console-button.minimize {
+    background-color: #ffbd2e;
+}
+
+.console-button.maximize {
+    background-color: #27c93f;
+}
+
+.console-title {
+    flex: 1;
+    text-align: center;
+    color: #bbb;
+    font-size: 14px;
+}
+
+.console-body {
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+pre {
+  color: aliceblue;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.paragraph {
+  font-size: 25px;
+  color:white; 
+  font-weight:bold; 
+  padding:15px; 
+  border:3px solid rgb(39, 243, 3);
+}
+
+.command-line span.token.output {
+	user-select: none;
 }

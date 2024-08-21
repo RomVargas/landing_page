@@ -9,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="/css/spring.css" />
     <link rel="stylesheet" type="text/css" href="/css/cards.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-bash.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/prism.css" />
+    <script src="/js/prism.js"></script>
+    
 </head>
 <body>
    
@@ -28,10 +29,10 @@
             <nav id="menu">
                 <ul>
                     <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/index.html#stack">STACK</a></li>
+                    <!-- <li><a href="/index.html#stack">STACK</a></li>
                    <li><a href="/index.html#cards">LEARN</a></li>
                    <li><a href="/index.html#cards">MY THREEJS MODELS</a></li>
-                   <li><a href="/index.html#footer">CONTACT</a></li> 
+                   <li><a href="/index.html#footer">CONTACT</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -52,7 +53,7 @@
         <div class="title" >
             <p class="font-stocky">Guia para crear una app FullStack  React - Spring boot - MySQL </p>
         </div>
-        <div class="blog-nav sidebar" style="border: 10px solid white;">
+        <div class="blog-nav sidebar">
             <ul>
                 <li><a class="font-04B " href="#intro">Stack</a></li>
                 <li><a class="font-04B" href="#setup">Setup</a></li>
@@ -63,10 +64,10 @@
         </div>
         <main>
             <article>
-                <p class="font-04B title">Stack utilizado</p>
+                <p class="font-stocky title">Stack utilizado</p>
                 <br><br>
                 <!-- inician Cards -->
-                <section id="cards" class="wrap">
+                <section id="cards">
                     <div class="stack-cards" >
                         <div class="card-learn-code">
                             <div class="canvas-wrapper" class="canvas">
@@ -164,16 +165,159 @@
                 </section>
             <!-- Terminan Cards -->
             <!-- Comienza setup -->
-             <br><br>
-                <pre class="shell font-stocky">
-                    <code class="language-shell">
-                        # Este es un ejemplo de comando shell
-                        ls -l
-                        cd /path/to/directory
-                        cat file.txt
-                    </code>
-                </pre>
+             <br><br><br><br>
+             <section id="set-up" >
+             <p class="font-stocky title">Set-Up</p>
+                <div id="create-front">
+                    <p class="paragraph font-04B">Create a Vite application with the next command</p>
+                </div>
+                <br><br>
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Terminal</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-bash" >
+$ npm create vite@latest proyect_name
+                        </code></pre>
+                    </div> 
+                </div>
+
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Terminal</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-batch">
+Select a framework: » - Use arrow-keys. Return to submit.
+    Vanilla
+    Vue
+>   React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Others
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Terminal</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-batch">
+√ Select a framework: » React
+? Select a variant: » - Use arrow-keys. Return to submit.
+    TypeScript
+    TypeScript + SWC
+    JavaScript
+>   JavaScript + SWC
+    Remix ↗
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Terminal</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-batch">
+√ Select a framework: » React
+√ Select a variant: » JavaScript + SWC
+
+Scaffolding project in D:\Documentos\React\react-tutorial\react-tutorial...
+
+Done. Now run:
+
+  cd react-tutorial
+  npm install      
+  npm run dev 
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Codigo Python</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-python">
+# Código en Python
+print("Hola, mundo!")
+                        </code></pre>
+                    </div>
+                </div>
+                 <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Codigo Java</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-Java">
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BackendUsersappApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BackendUsersappApplication.class, args);
+	}
+
+}
+                        </code></pre>
+                    </div>
+                </div> 
+                <div class="console">
+                    <div class="console-header">
+                        <div class="console-buttons">
+                            <span class="console-button close"></span>
+                            <span class="console-button minimize"></span>
+                            <span class="console-button maximize"></span>
+                        </div>
+                        <div class="console-title">Codigo HTML</div>
+                    </div>
+                    <div class="console-body">
+                        <pre ><code class="language-markup">
+  &#60;p&#62; Example &#60;/p&#62;
+  &#60;div&#62; Example two &#60;/div&#62;
+                        </code></pre>
+                    </div>
+                </div>
+            </section>
             <!-- termina setup -->
+             <br><br><br>
             </article>
         </main>
     </div>
